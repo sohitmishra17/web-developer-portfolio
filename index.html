@@ -1,52 +1,597 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Peter Parker Website</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>SohitMishra</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-    <section class="top-banner">
-        <div class="half-width">
-            <h1>Welcome To</h1>
-            <h1><span>Peter Parker</span> World</h1>
-            <h3>Build Climber and Train Stopper</h3>
-            <p>You might saw me jumping, climbing buildings, and stopping trains. But nobody pays me a dime for that work. That's why I am learning and mastering web development. I will not stop until I become the Web Development Hero.</p>
-            <a class="anchor-button" target="_blank" href="https://www.linkedin.com/company/programminghero/">HIRE ME</a>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Sohit</span>Mishra</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#qualification" class="nav-item nav-link">Quality</a>
+                <a href="#skill" class="nav-item nav-link">Skill</a>
+                <a href="#portfolio" class="nav-item nav-link">Projects</a>
+                <a href="#blog" class="nav-item nav-link">Blog</a>
+                <a href="#service" class="nav-item nav-link">Awards</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="https://drive.google.com/file/d/1mqd2TV3QIBKauqg0Tepxgp-Ml_Wycqia/view?usp=share_link" class="btn btn-outline-primary d-none d-lg-block">Get Details</a>
         </div>
-        <div class="half-width">
-            <img src="images/jhankar.png" alt="">
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-    <section class="dream-area">
-        <div class="half-width">
-            <img src="images/jhankar2.png" alt="">
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Sohit Mishra</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Salesforce Developer, Cyber Security Researcher</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="https://drive.google.com/file/d/1mpXeRO1-B125JAmDL22ms_Dipe_FVk7m/view?usp=share_link" class="btn btn-outline-light mr-5">Download CV</a>
+                        <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdcrjhrur" data-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="half-width">
-            <h2>Dream Big</h2>
-            <h3>Become a web developer</h3>
-            <p>I already learned the basic HTML and CSS. I can build any simple website. I can even teach my grandma how to make simple website. My goal is to build 3 websites and learn advanced topics.</p>
-            <a class="anchor-button" href="">DOWNLOAD RESUME</a>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Salesforce Developer & Cyber Security Researcher</h3>
+                    <p style="text-align: justify;">I am a <strong> Salesforce Developer</strong> with having <strong>1+ Year</strong> experience in Salesforce. I worked over CMS that is developed using Salesforce. I am a tech enthusiastic person and team player with a capabilities to developed & talk with the client for developed best quality e-commerce website according to his business requirements. I believe that before developing anything using any tech, think not like a developer, Think like a creator of a technology that enable us in deep dive in technologies for creating impact!</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Sohit Mishra</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">17 June 1999</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Bachelor's Of Technology</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Branch: <span class="text-secondary">Computer Science</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">1+ Year</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+91 6377376881</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">mishra.sohit.17@gmail.com</span></h6></div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1mpXeRO1-B125JAmDL22ms_Dipe_FVk7m/view?usp=share_link" class="btn btn-outline-primary mr-4">Hire Me</a>
+                    <!-- <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a> -->
+                    <a class="btn btn-light btn-social mr-2" href="https://github.com/Nimish-Agarwal2000"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-light btn-social mr-2" href="https://medium.com/@nimish27agarwal"><i class="fab fa-medium"></i></a>
+                    <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/sohit-mishra-18a905230"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-light btn-social" href="https://www.instagram.com/er_nimish_agarwal/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
-    </section>
-    <section class="experience-area">
-        <h2>Experiences</h2>
-        <div class="half-width" id="full-stack">
-            <h2>Full Stack Web Developer</h2>
-            <h3>2021-Present | Pro Level Developer</h3>
-            <p>I am the master of HTML, CSS and Javascript. I know everything needed to make a website function, efficient. I didn't stop with the web. I went beyond with most popular Javascript framework called Vue JS. I even know the deployment, server and security. I will give you 100% web solution.</p>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Btech In CSE</h5>
+                            <p class="mb-2"><strong>Dr APJ Abdul Kalam Technical University, Lucknow</strong> | <small>2018 - 2022</small></p>
+                            <p style="text-align: justify;">I completed my "Bachelor's Of Technology" in the field of "Computer Science & Engineering" with 77.10 Aggregate. I have good computer science fundamentals with good knowledge of core subjects of my field!</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Intermediate In Science</h5>
+                            <p class="mb-2"><strong>Ess Ess Convent Sr Sec School</strong> | <small>2017 - 2018</small></p>
+                            <p style="text-align: justify;">I completed my "Intermediate" with "Science" stream in 2018 from "Central Board of Secondary Education".</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">High School</h5>
+                            <p class="mb-2"><strong>Ess Ess Convent Sr Sec School</strong> | <small>2015 - 2016</small></p>
+                            <p style="text-align: justify;">I completed my "High School" in 2016 from "Central Board of Secondary Education".</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Expericence</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Software Developer</h5>
+                            <p class="mb-2"><strong>Dotsquares Technologies Pvt Ltd</strong> | <small>Jan 2022 - Present</small></p>
+                            <p style="text-align: justify;">I am working as a software developer in magento 2 & shopify technology for making complete e-commerce website that enable small and medium scale business to large scale with more costumer engagement on the behalf of client requirements.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Freelance Security Consultant</h5>
+                            <p class="mb-2"><strong>U S M T A</strong> | <small>Aug 2020 - June 2021</small></p>
+                            <p style="text-align: justify;">I worked as contract based security consultant and tech safe dev that can advice to the student and tech guys to be safe and secure development of softwares and websites with proven secure methodologies & best practises!</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Cyber Security Intern</h5>
+                            <p class="mb-2"><strong>Gurugram Police Cyber Cell</strong> | <small>June 2020 - July 2021</small></p>
+                            <p style="text-align: justify;">I worked as cyber security intern in gurugram police cyber cell in 2020. I did projects & case studies with best practices there. I teach students to be cyber safe online and also take lectures to be cyber safe!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="half-width" id="baby-web">
-            <h2>Baby Web Developer</h2>
-            <h3>2020-2021 | Programming Hero Learner</h3>
-            <p>They didn't offer me a job. But I made myself as a remove web developer. I made their website and showed it to them. They liked it. And uploaded the content. It was fun working at Programming Hero.</p>
+    </div>
+    <!-- Qualification End -->
+
+
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                            <h6 class="font-weight-bold">80%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">CSS & LESS</h6>
+                            <h6 class="font-weight-bold">70%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Apex</h6>
+                            <h6 class="font-weight-bold">65%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">LWC</h6>
+                            <h6 class="font-weight-bold">80%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Javascript & JQuery</h6>
+                            <h6 class="font-weight-bold">65%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Mysql</h6>
+                            <h6 class="font-weight-bold">60%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Magento 2</h6>
+                            <h6 class="font-weight-bold">85%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Shopify</h6>
+                            <h6 class="font-weight-bold">75%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Microsoft Azure</h6>
+                            <h6 class="font-weight-bold">45%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">VS Code </h6>
+                            <h6 class="font-weight-bold">90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Git & Jira</h6>
+                            <h6 class="font-weight-bold">65%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div> -->
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">XML & JSON</h6>
+                            <h6 class="font-weight-bold">75%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-    <footer>
-        <p>© Peter Parker 2023, a Programming Hero initiative.</p>
-    </footer>
+    </div>
+    <!-- Skill End -->
+
+    <!-- Project Work Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Work</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Salesforce</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Shopify</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Others</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a data-lightbox="portfolio">
+                                <i style="font-size: 30px;"><a href="https://www.sweetsandcandy.co.uk/" style="text-decoration: none;" class="fa text-white">Watch Live >></a></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a data-lightbox="portfolio">
+                                <i style="font-size: 30px;"><a href="https://greshamblake.com/" style="text-decoration: none;" class="fa text-white">Watch Live >></a></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                           <a data-lightbox="portfolio">
+                                <i style="font-size: 30px;"><a href="https://recognition-portal.co.uk/" style="text-decoration: none;" class="fa text-white">Watch Live >></a></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                           <a data-lightbox="portfolio">
+                                <i style="font-size: 30px;"><a href="https://www.zeoform.com/" style="text-decoration: none;" class="fa text-white">Watch Live >></a></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a data-lightbox="portfolio">
+                                <i class="fa text-white" style="font-size: 30px;">Coming Soon!</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a data-lightbox="portfolio">
+                                <i style="font-size: 30px;"><a href="https://abler.com/" style="text-decoration: none;" class="fa text-white">Watch Live >></a></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid pt-5" id="blog">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Latest Blog</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">18</h4>
+                            <small class="text-white text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">How To Create Patch For Fixing Bug On Vendor In Magento 2.X By Using Git.<br><br><br></h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="https://medium.com/@nimish27agarwal/how-to-create-patch-for-fixing-bug-on-vendor-in-magento-2-x-by-using-git-6151ceb66fc0">Read More</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Mar</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">How To Bypass Magento 2.X Admin Login Page With Help Of Username & Admin URL.<br><br></h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="https://medium.com/@nimish27agarwal/how-to-bypass-magento-2-x-admin-login-page-with-help-of-username-admin-url-83e3142f8279">Read More</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Mar</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">How To Secure Magento 2.X Admin Login From Unauthorised Access By Unknown IP With The Help Of Htaccess File.</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="https://medium.com/@nimish27agarwal/how-to-secure-magento-2-x-f1d0b7e22404">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+    <!-- Honors & Awards Start -->
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Awards</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Certificate's</h1>
+            </div>
+            <!-- here slider -->
+            <div class="body-1">
+                <div class="container1">
+                  <div class="main-img-1">
+                    <span class="demon"></span>
+                    <span class="demon"></span>
+                    <span class="demon"></span>
+                    <span class="demon"></span>
+                    <span class="demon"></span>
+                    <span class="demon"></span>
+                  </div>
+                   <div class="images-1">
+                     <img src="img/certificate-1.jpg" width="90" onclick="getImg(this)"/>
+                     <img src="img/certificate-2.jpg" width="90" onclick="getImg(this)"/>
+                     <img src="img/certificate-3.jpg" width="90" onclick="getImg(this)"/>
+                     <img src="img/certificate-4.jpg" width="90" onclick="getImg(this)"/>
+                   </div>
+                </div>
+            </div>
+            <!-- end -->
+            <div class="row pb-3" style="margin-top: 28px;">
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <h5 class="font-weight-bold m-0">Microsoft Certified<br> Security Operations Analyst Associate</h5>
+                    </div>
+                    <p>I am certified by Microsoft on it's azure cloud as a security operations analyst associate!</p><br>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="https://www.credly.com/badges/8d54bd04-9903-4efa-834f-3ed5b88ba852">Credentials Here >></a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <h5 class="font-weight-bold m-0">IITK Certified<br> Computer System Security Course</h5>
+                    </div>
+                    <p>I am certified by Indian Institute Of Technology, Kanpur on it's Computer System Security Course!</p><br>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="https://drive.google.com/file/d/1nH-Sfhc3ANBnW_eKjiUXb6Ozj15Txtas/view">Credentials Here >></a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <h5 class="font-weight-bold m-0">Cyber Security Recognition<br> at Gurugram Police Cyber Cell</h5>
+                    </div>
+                    <p>I interned at gurugram police cyber cell. I learn and build project under them in cyber security field!</p>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="https://drive.google.com/file/d/1E7Z2tt_1BHFlxGwKHLfOFmQ6uF4Vg-P5/view?usp=share_link">Credentials Here >> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- Contact Start -->
+    <!-- <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                        required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="bt" onclick="saveFile()">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-3">
+                <h3 style="color: white;">Connect With Me!</h3>
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://github.com/Nimish-Agarwal2000"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://medium.com/@nimish27agarwal"><i class="fab fa-medium"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/nimish-agarwal/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="https://www.instagram.com/er_nimish_agarwal/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">SohitMishra.tech</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
